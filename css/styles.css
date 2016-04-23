@@ -10,6 +10,9 @@
 
 .border-box {
     box-sizing: border-box;
+    border-bottom-style: solid;
+    border-width: 0.005rem;
+    border-color: #656565;
 }
 
 .br-100 {
@@ -86,16 +89,17 @@
 .bg-gray{
     background-color: #F7F7F7 ;
 }
+
+.bg-darkgray{
+    background-color: #EBEBEB;
+}
+
 .bg-white{
     background-color: #FFFFFF;
 }
 
 .lh-copy {
     line-height: 1.6;
-}
-
-.mw5 {
-    max-width: 16rem;
 }
 
 .pa3 {
@@ -113,23 +117,46 @@
 .center {
     margin-right: auto;
     margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
 }
 .middle{
     text-align: center;
 }
 
-@media screen and (min-width: 48em) {
-    .mw7-ns {
-        max-width: 48rem;
-    }
+.fullwidth{
+    width: 100%;
+}
+.mb0{
+    margin-bottom: 0rem;
+}
+.mb5{
+    margin-bottom: 5rem;
+}
+.cl{
+    clear:left;
+}
+.width{
+    width: 100%;
+}
 
+.overflow{
+    overflow: auto;
+}
+
+
+@media screen and (min-width: 48em) {
+    .width{
+        width: 33.33%;
+    }
+    .ft{
+        float:left;
+    }
     .ph5-ns {
         padding-left: 4rem;
         padding-right: 4rem;
     }
-}
 
-@media screen and (min-width: 48em) {
     .dt-ns {
         display: table;
     }
