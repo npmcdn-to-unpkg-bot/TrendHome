@@ -144,6 +144,10 @@
     overflow: auto;
 }
 
+.t50{
+    opacity: 0.5;
+}
+
 
 @media screen and (min-width: 48em) {
     .width{
