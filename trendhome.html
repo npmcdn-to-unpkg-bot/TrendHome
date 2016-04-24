@@ -117,9 +117,37 @@
 			  		</div>
 					
 				</div>
-
+			</section>
+			<section id="contact" class="bg-gray fullwidth center pa3 ph5-ns mt0">
+				<div class = "overflow">
+					<h1 class="middle mb5">
+						Contact
+					</h1>
+					<div id="map" class="middle center">
+						
+					</div>
+				</div>
+				
 			</section>
 		</div>
+		<script>
+			function initMap(){
+				var mapDiv = 
+					document.getElementById('map');
+				var myPosition = {lat:18.827469,lng: 99.008021}
+				var map = new google.maps.Map(mapDiv,{
+					center: myPosition,
+					zoom:18
+				});
+				var marker = new google.maps.Marker({
+					position: myPosition,
+					map: map,
+					title: 'TrendHome'
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
 
 	</body>
 </html>

@@ -4,6 +4,13 @@
     margin-top: 0rem;
 }
 
+#map{
+    width: 40rem;
+    height: 40rem;
+    
+    background-color: black;
+}
+
 .fixed {
     position: fixed;
 }
