@@ -136,7 +136,11 @@
 .cl{
     clear:left;
 }
-.width{
+.col3{
+    width: 100%;
+}
+
+.col2{
     width: 100%;
 }
 
@@ -148,10 +152,17 @@
     opacity: 0.5;
 }
 
+.highprio{
+    z-index: 1;
+}
+
 
 @media screen and (min-width: 48em) {
-    .width{
+    .col3{
         width: 33.33%;
+    }
+    .col2{
+        width: 50%;
     }
     .ft{
         float:left;
