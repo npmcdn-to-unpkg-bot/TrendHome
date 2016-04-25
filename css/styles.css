@@ -175,8 +175,12 @@ html, body{
 }
 
 .highprio{
+    z-index: 2;
+}
+.highprio2{
     z-index: 1;
 }
+
 
 .nofloat{
     clear: left;
