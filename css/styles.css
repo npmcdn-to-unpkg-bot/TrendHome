@@ -4,11 +4,23 @@
     margin-top: 0rem;
 }
 
+html, body{
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+
+#contactinfo{
+    position: relative;
+    padding-top: calc(0.7 * (100vh - 17px))
+}
+
 #map{
-    width: 40rem;
-    height: 40rem;
-    
-    background-color: black;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .fixed {
@@ -137,6 +149,9 @@
 .mb0{
     margin-bottom: 0rem;
 }
+.mb2{
+    margin-bottom: 2rem;
+}
 .mb5{
     margin-bottom: 5rem;
 }
@@ -163,8 +178,19 @@
     z-index: 1;
 }
 
+.nofloat{
+    clear: left;
+    clear: right;
+}
 
 @media screen and (min-width: 48em) {
+    #contactinfo{
+        padding-top: calc(0.9 * (100vh - 17px))
+    }
+    #map{
+        height: 80%;
+    }
+
     .col3{
         width: 33.33%;
     }
