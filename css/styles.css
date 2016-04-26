@@ -34,6 +34,14 @@ body{
     right: 0;
 }
 
+.imgcol3{
+    width: 15rem;
+}
+
+.imgcol2{
+    width: 25rem;
+}
+
 .fixed {
     position: fixed;
 }
@@ -140,8 +148,16 @@ body{
     background-color: #EBEBEB;
 }
 
+.bg-darkgray2{
+    background-color: #5f5f5f;
+}
+
 .bg-white{
     background-color: #FFFFFF;
+}
+
+.fontwhite{
+    color: #f1f1f1;
 }
 
 .lh-copy {
@@ -284,7 +300,7 @@ body{
         font-size: 1rem;
     }
     .body{
-        padding-top: 4.5rem;
+        padding-top: 4.325rem;
     }
 }
 
