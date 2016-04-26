@@ -1,7 +1,8 @@
 
 *{
     font-family: 'Roboto', sans-serif;
-    margin-top: 0rem;
+    margin: 0rem;
+    
 }
 
 html, body{
@@ -9,6 +10,16 @@ html, body{
     width: 100%;
     position: relative;
 }
+body{
+    /*background-color: #111111 !important;
+    color: #CCCCCC !important;*/
+}
+/*
+.colorscheme{
+    background-color: #111111;
+    color: #CCCCCC;
+}
+*/
 
 #contactinfo{
     position: relative;
@@ -27,11 +38,27 @@ html, body{
     position: fixed;
 }
 
+.tr {
+    text-align: right;
+}
+
 .border-box {
     box-sizing: border-box;
     border-bottom-style: solid;
     border-width: 0.005rem;
     border-color: #656565;
+}
+
+.languagebox{
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0.005rem;
+    border-color: #656565;
+}
+
+.paddingbox{
+    padding:0.1rem;
+    padding-bottom: 0rem;
 }
 
 .br-100 {
@@ -181,6 +208,13 @@ html, body{
     z-index: 1;
 }
 
+.floatleft{
+    float:left;
+}
+
+.floatright{
+    float: right;
+}
 
 .nofloat{
     clear: left;
