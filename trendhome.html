@@ -15,9 +15,9 @@
 			<a class="db fontwhite dtc-ns v-mid link dim w-25 tc tl-ns mb2 mb0-ns" href="#" title="Home">
 			   <img src="Mushroom.ico" class="dib w2 h2 br-100" alt="Site Name">
 			</a>
-		  	<div class="db dtc-ns v-mid w-75 tr">
+		  	<div id="header-list" class="db dtc-ns v-mid w-75 tr">
 			    <a class="link fontwhite dim f6 f5-ns dib mr3 mr4-ns" href="#" title="Home">Home</a>
-			    <a class="link fontwhite dim f6 f5-ns dib mr3 mr4-ns" href="#" title="Features">Features</a>
+			    <a class="link fontwhite dim f6 f5-ns dib mr3 mr4-ns" href="#" title="Features">Amenities</a>
 			    <a class="link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#" title="Gallery">Gallery</a>
 			    <a class="link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#" title="Pricing">Pricing</a>
 			    <a class="link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#" title="Contact">Contact</a>
@@ -35,10 +35,25 @@
 			    	</a>
 			    </div>
 		  	</div>
+
+		  	<div id="hamburgerbtn" class="dropdown w-75 v-mid tr">
+			  <button onclick="menuFunction()" class="dropbtn v-mid" style="width:1.75rem; height: 1.75rem; z-index: 3; background-image: url('hamburger.svg'); background-size: 1.75rem 1.75rem; padding: 0;">
+			  	
+			  </button>
+			  <div id="myDropdown" class="dropdown-content">
+			    <a href="#">Home</a>
+			    <a href="#">Amenities</a>
+			    <a href="#">Gallery</a>
+			    <a href="#">Pricing</a>
+			    <a href="#">Contact</a>
+			    <a href="#">ภาษาไทย</a>
+			  </div>
+			</div>
+
 		</div>
 		<div class="body">
 			<img class="fullwidth t50 mt0" src="home_pic.jpg" >
-			<div id= "features" class="bg-darkgray fullwidth center pa3 ph5-ns mt0">
+			<div id= "amenities" class="bg-darkgray fullwidth center pa3 ph5-ns mt0">
 			  <h1 class="mt0 middle">
 			  	Why TrendHome?
 			  </h1>
@@ -191,5 +206,27 @@
 		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
          async defer>
          </script>
+         <script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function menuFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+		</script>
 	</body>
 </html>
