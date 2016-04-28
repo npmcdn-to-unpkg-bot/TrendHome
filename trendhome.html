@@ -9,6 +9,7 @@
 		<!-- Montserrat Font link -->
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		
 	</head>
 	<body class = "bg-gray colorscheme">
 		<div class="fixed bg-darkgray2 db dt-ns w-100 border-box pa3 ph5 mb0 highprio colorscheme" style="height:3.5rem">
@@ -16,11 +17,11 @@
 			   <img src="Mushroom.ico" class="dib w2 h2 br-100" alt="Site Name">
 			</a>
 		  	<div id="header-list" class="db dtc-ns v-mid w-75 tr">
-			    <a class="link fontwhite dim f6 f5-ns dib mr3 mr4-ns" href="#" title="Home">Home</a>
-			    <a class="link fontwhite dim f6 f5-ns dib mr3 mr4-ns" href="#" title="Features">Amenities</a>
-			    <a class="link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#" title="Gallery">Gallery</a>
-			    <a class="link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#" title="Pricing">Pricing</a>
-			    <a class="link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#" title="Contact">Contact</a>
+			    <a class="jumper link fontwhite dim f6 f5-ns dib mr3 mr4-ns" href="#home" title="Home">Home</a>
+			    <a class="jumper link fontwhite dim f6 f5-ns dib mr3 mr4-ns" href="#amenities" title="Amenities">Amenities</a>
+			    <a class="jumper link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#gallery" title="Gallery">Gallery</a>
+			    <a class="jumper link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#pricing" title="Pricing">Pricing</a>
+			    <a class="jumper link dim fontwhite f6 f5-ns dib mr3 mr4-ns" href="#contact" title="Contact">Contact</a>
 
 			    <div class="bg-darkgray languagebox db dtc-ns v-mid mid-gray tc tl-ns mb2 mb0-ns floatright paddingbox">
 			    	<a class="link dim dark-gray f6 f5-ns dib floatleft" href="#" title="Thai"
@@ -42,23 +43,26 @@
 			  </button>
 			  <div id="myDropdown" class="dropdown-content">
 			    <a href="#">Home</a>
-			    <a href="#">Amenities</a>
-			    <a href="#">Gallery</a>
-			    <a href="#">Pricing</a>
-			    <a href="#">Contact</a>
+			    <a href="#amenities" class="jumper">Amenities</a>
+			    <a href="#gallery" class="jumper">Gallery</a>
+			    <a href="#pricing" class="jumper">Pricing</a>
+			    <a href="#contact" class="jumper">Contact</a>
 			    <a href="#">ภาษาไทย</a>
 			  </div>
 			</div>
 
 		</div>
 		<div class="body">
+			<div id="home" class="mtjump"> </div>
 			<img class="fullwidth t50 mt0" src="home_pic.jpg" >
-			<div id= "amenities" class="bg-darkgray fullwidth center pa3 ph5-ns mt0">
-			  <h1 class="mt0 middle">
-			  	Why TrendHome?
-			  </h1>
-			  <hr class="mb5">
-			  <section class ="overflow">
+			<div id="amenities" class="mtjump"> </div>
+			<div class="bg-darkgray fullwidth center pa3 ph5-ns mt0">
+				<section class ="overflow">
+				  <h1 class="mt0 middle">
+				  	Why TrendHome?
+				  </h1>
+				  <hr class="mb5">
+			  
 				  <div class="ft col3 bg-darkgray">
 					  <center><img src="image1.jpg" class="imgcol3"></center>
 					  <h2 class="lh-copy middle">
@@ -82,14 +86,14 @@
 					  <h2 class="lh-copy middle">
 					    good stuff
 					  </h2>
-					  	<p class="lh-copy middle">
+					  	<p class="lh-copy middle mb5">
 					     blah blah blah
 					  </p>
 				  </div>
 			  </section>
 			</div>
-
-			<section id="Gallery" class="cl bg-gray fullwidth center pa3 ph5-ns mt0 colorscheme">
+			<span id="gallery" class="mtjump"> </span>
+			<section  class="cl bg-gray fullwidth center pa3 ph5-ns mt0 colorscheme">
 				<h1 class="mt0 middle">
 			  		Gallery
 			  	</h1>
@@ -138,9 +142,10 @@
 					  </center>
 				  	</div>
 				</section>
-
 			</section>
-			<section id="Pricing" class="bg-darkgray fullwidth center pa3 ph5-ns mt0">
+
+			<div id="pricing" class="mtjump"> </div>
+			<section class="bg-darkgray fullwidth center pa3 ph5-ns mt0">
 				<div class="overflow">
 					<h1 class="mt0 middle">
 			  		Prices
@@ -161,7 +166,9 @@
 
 				</div>
 			</section>
-			<section id="contact" class="bg-gray fullwidth center pa3 ph5-ns mt0 colorscheme">
+
+			<div id="contact" class="mtjump"> </div>
+			<section class="bg-gray fullwidth center pa3 ph5-ns mt0 colorscheme">
 				<div class = "overflow">
 					<h1 class="middle">
 						Contact Us
@@ -227,6 +234,23 @@
 			    }
 			  }
 			}
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			$(function() {
+			  $('.jumper').click(function() {
+			    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1200); // The number here represents the speed of the scroll in milliseconds
+			        return false;
+			      }
+			    }
+			  });
+			});
 		</script>
 	</body>
 </html>
