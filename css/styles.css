@@ -34,6 +34,38 @@ body{
     right: 0;
 }
 
+.verticalline {
+    border-left: solid #EBEBEB;
+}
+
+.mb1{
+    margin-bottom: 1rem;
+}
+
+.height13{
+    height: 13rem;
+}
+
+.height18{
+    height: 15rem;
+}
+
+.paddingtop4{
+    padding-top: 4rem;
+}
+
+.paddingl{
+    padding-left: 1rem;
+}
+
+.paddingr{
+    padding-right: 1rem;
+}
+
+.marginbottom2{
+    margin-bottom: 2rem;
+}
+
 .imgcol3{
     width: 15rem;
 }
@@ -271,6 +303,7 @@ body{
     border: none;
     padding: 0;
     cursor: pointer; 
+    background-color: white;
     display: table-cell;
 }
 
@@ -323,6 +356,9 @@ body{
 }
 
 @media screen and (min-width: 60em) {
+    .verticalline{
+        border-left: solid #777;
+    }
     #hamburgerbtn{
         display: none;
     }
