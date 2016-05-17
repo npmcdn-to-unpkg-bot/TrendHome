@@ -1,8 +1,8 @@
 
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'CSPraJad','Open Sans', sans-serif;
     margin: 0rem;
-    
+
 }
 
 html, body{
@@ -47,7 +47,7 @@ body{
 }
 
 .height18{
-    height: 15rem;
+    height: 13rem;
 }
 
 .paddingtop4{
@@ -185,7 +185,7 @@ body{
 
 .body{
     padding-top: 3.5rem;
-    
+
 }
 
 .bg-gray{
@@ -302,7 +302,7 @@ body{
     color: white;
     border: none;
     padding: 0;
-    cursor: pointer; 
+    cursor: pointer;
     background-color: white;
     display: table-cell;
 }
@@ -426,4 +426,3 @@ body{
         padding-top: 3.5rem;
     }
 }
-
