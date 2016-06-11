@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>
 			TrendHome
 		</title>
 		<link rel="stylesheet "href="https://npmcdn.com/tachyons@4.0.0-beta.22/css/tachyons.min.css">
 		<!-- Montserrat Font link -->
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" href="css/lightbox.css">
 		<link rel="icon" href="logo.jpg">
 	</head>
-	<body class = "bg-gray colorscheme w-100">
+	<body class = "bg-gray colorscheme">
 		<div class="fixed db bg-white dt-ns w-100 border-box pa3 ph5 mb0 highprio colorscheme" style="height:3.5rem">
 			<a class="db fontwhite dtc-ns v-mid link dim w-25 tl tl-ns mb2 mb0-ns floatleft" href="#" title="Home" >
 		   		<img src="logo.jpg" class="dib h2 " alt="Site Name">
@@ -38,7 +37,7 @@
 
 		  	<div id="hamburgerbtn" class="floatright dropdown v-mid tr">
 			  <button onclick="menuFunction()" class="dropbtn v-mid" style="width:1.75rem; height: 1.75rem; z-index: 3; background-image: url('hamburger.svg'); background-size: 1.75rem 1.75rem; padding: 0;">
-
+			  	
 			  </button>
 			  <div id="myDropdown" class="dropdown-content">
 			    <a href="#home" class="jumper">โฮม</a>
@@ -56,29 +55,30 @@
 			<div id="home" class="mtjump"> </div>
 			<img class="fullwidth t50 mt0 mb0" src="project.jpg" >
 			<div id="amenities" class="mtjump"> </div>
-			<div class="bg-darkgray fullwidth center pa3 ph0 mt0">
+			<div class="bg-darkgray fullwidth center pa3 ph5-ns mt0">
 				<section class ="overflow">
-				  <h1 class="mt5 mb5 middle">
+				  <h1 class="mt0 middle">
 				  	ทำไมต้อง เทรนด์โฮม?
 				  </h1>
-
-				  <div class="ft col3 pt5 mb5 w-30 ph0 mh0">
+				  <hr class="mb1">
+			  
+				  <div class="ft col3 paddingtop4 mb5 paddingl paddingr">
 					  <h2 class="lh-copy middle">
 					    ทำเลดี
 					  </h2>
 					  	<p class="lh-copy middle ">
-					     ใกล้ ตลาดรวมโชค ริมปิง โลตัส โรงพยาบาลกรุงเทพ </br>โรงเรียนนานาชาติ NIS เซ็นทรัลเฟสติวัล
+					     ใกล้ ตลาดรวมโชค ริมปิง โลตัส โรงพยาบาลกรุงเทพ โรงเรียนนานาชาติNIS เซ็นทรัลเฟสติวัล
 					  </p>
 				  </div>
-				  <div class="ft col3 pt5 mt5 height13 w-30 ph0 mh0">
+				  <div class="ft col3 paddingtop4 verticalline height13 paddingl paddingr">
 					  <h2 class="lh-copy middle">
 					    เดินทางสะดวก
 					  </h2>
 					  	<p class="lh-copy middle mb5 ">
-					     	มี ทางเข้า ออก 2 ทางหลัก ถนนเชียงใหม่ - แม่โจ้ และ ถนน วงแหวนรอบ 2
+					     	มี ทางเข้า ออก 2 ทางหลัก ถนนเชียงใหม่ - แม่โจ้ และ ถนน วงแหวนรอบ 2 
 					  </p>
 				  </div>
-				  <div class="ft col3 pt5 height13 w-30 ph0 mh0">
+				  <div class="ft col3 paddingtop4 verticalline height13 paddingl paddingr">
 					  <h2 class="lh-copy middle">
 					    หน้ากว้าง 6 เมตร
 					  </h2>
@@ -106,9 +106,8 @@
 					  </h2>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  	<a href="layout1/front.jpg"
-					  	data-lightbox="layout1"
-							data-title="ทางเข้า">
+					  	<a href="layout1/front.jpg" 
+					  	data-lightbox="layout1">
 					  <img src="layout1/front.jpg" class="imgcol3">
 					  </a>
 					  </center>
@@ -117,73 +116,57 @@
 					  </p>
 				  	</div>
 				  	<div class="ft col3 mb5">
-					  <center><a href="layout1/hall_down.jpg"
-					  	data-lightbox="layout1"
-							data-title="ห้องโถงล่าง">
-							<img src="layout1/hall_down.jpg" class="imgcol3"></a></center>
+					  <center><a href="layout1/hall_down.jpg" 
+					  	data-lightbox="layout1"><img src="layout1/hall_down.jpg" class="imgcol3"></a></center>
 					  <p class="lh-copy middle">
 					  	ห้องโถงล่าง
 					  </p>
 				  	</div>
 				  	<div class="ft col3 mb5">
-					  <center><a href="layout1/kitchen.jpg"
-					  	data-lightbox="layout1"
-							data-title="ห้องครัว">
-							<img src="layout1/kitchen.jpg" class="imgcol3"></a></center>
+					  <center><a href="layout1/kitchen.jpg" 
+					  	data-lightbox="layout1"><img src="layout1/kitchen.jpg" class="imgcol3"></a></center>
 					  <p class="lh-copy middle">
 					  	ห้องครัว
 					  </p>
 				  	</div>
 				  	<div class="ft col3 mb5">
-					  <center><a href="layout1/bath_down.jpg"
-					  	data-lightbox="layout1"
-							data-title="ห้องน้ำล่าง">
-							<img src="layout1/bath_down.jpg" class="imgcol3"></a></center>
+					  <center><a href="layout1/bath_down.jpg" 
+					  	data-lightbox="layout1"><img src="layout1/bath_down.jpg" class="imgcol3"></a></center>
 					  <p class="lh-copy middle">
 					  	ห้องน้ำล่าง
 					  </p>
 				  	</div>
 				  	<div class="ft col3 mb5">
-					  <center><a href="layout1/bath_down2.jpg"
-					  	data-lightbox="layout1"
-							data-title="ห้องน้ำล่าง">
-							<img src="layout1/bath_down2.jpg" class="imgcol3"></a></center>
+					  <center><a href="layout1/bath_down2.jpg" 
+					  	data-lightbox="layout1"><img src="layout1/bath_down2.jpg" class="imgcol3"></a></center>
 					  <p class="lh-copy middle">
 					  	ห้องน้ำล่าง
 					  </p>
 				  	</div>
 				  	<div class="ft col3 mb5">
-					  <center><a href="layout1/bath_up2.jpg"
-					  	data-lightbox="layout1"
-							data-title="ห้องน้ำบน">
-							<img src="layout1/bath_up2.jpg" class="imgcol3"></a></center>
+					  <center><a href="layout1/bath_up2.jpg" 
+					  	data-lightbox="layout1"><img src="layout1/bath_up2.jpg" class="imgcol3"></a></center>
 					  <p class="lh-copy middle">
 					  	ห้องน้ำบน
 					  </p>
 				  	</div>
 				  	<div class="ft col3 mb5">
-					  <center><a href="layout1/bath_up1.jpg"
-					  	data-lightbox="layout1"
-							data-title="ห้องน้ำบน">
-							<img src="layout1/bath_up1.jpg" class="imgcol3"></a></center>
+					  <center><a href="layout1/bath_up1.jpg" 
+					  	data-lightbox="layout1"><img src="layout1/bath_up1.jpg" class="imgcol3"></a></center>
 					  <p class="lh-copy middle">
 					  	ห้องน้ำบน
 					  </p>
 				  	</div>
 				  	<div class="ft col3 mb5">
-					  <center><a href="layout1/bed1.jpg"
-					  	data-lightbox="layout1"
-							data-title="ห้องนอน">
-							<img src="layout1/bed1.jpg" class="imgcol3"></a></center>
+					  <center><a href="layout1/bed1.jpg" 
+					  	data-lightbox="layout1"><img src="layout1/bed1.jpg" class="imgcol3"></a></center>
 					  <p class="lh-copy middle">
 					  	ห้องนอน
 					  </p>
 				  	</div>
 				  	<div class="ft col3 mb5">
-					  <center><a href="layout1/garden2.jpg"
-					  	data-lightbox="layout1"
-							data-title="สวน">
-							<img src="layout1/garden2.jpg" class="imgcol3"></a></center>
+					  <center><a href="layout1/garden2.jpg" 
+					  	data-lightbox="layout1"><img src="layout1/garden2.jpg" class="imgcol3"></a></center>
 					  <p class="lh-copy middle">
 					  	สวน
 					  </p>
@@ -195,8 +178,8 @@
 					  </h2>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  	<a href="layout2/front.jpg"
-					  	data-lightbox="layout2"
+					  	<a href="layout2/front.jpg" 
+					  	data-lightbox="layout2" 
 					  	data-title="ทางเข้า">
 					  		<img class="imgcol3" src="layout2/front.jpg" alt="">
 					  	</a>
@@ -207,9 +190,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  	<a href="layout2/hall_down.jpg"
-					  	data-lightbox="layout2"
-							data-title="ห้องโถงล่าง">
+					  	<a href="layout2/hall_down.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/hall_down.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -219,9 +201,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/kitchen.jpg"
-					  	data-lightbox="layout2"
-							data-title="ห้องครัว">
+					  <a href="layout2/kitchen.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/kitchen.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -231,9 +212,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/stairs.jpg"
-					  	data-lightbox="layout2"
-							data-title="บันได">
+					  <a href="layout2/stairs.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/stairs.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -243,9 +223,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/hall_up.jpg"
-					  	data-lightbox="layout2"
-							data-title="ห้องโถงบน">
+					  <a href="layout2/hall_up.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/hall_up.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -255,9 +234,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/bed1.jpg"
-					  	data-lightbox="layout2"
-							data-title="ห้องนอน">
+					  <a href="layout2/bed1.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/bed1.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -267,9 +245,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/dressing1.jpg"
-					  	data-lightbox="layout2"
-							data-title="ห้องแต่งตัว">
+					  <a href="layout2/dressing1.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/dressing1.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -279,9 +256,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/balcony.jpg"
-					  	data-lightbox="layout2"
-							data-title="ระเบียง">
+					  <a href="layout2/balcony.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/balcony.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -291,9 +267,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/garden.jpg"
-					  	data-lightbox="layout2"
-							data-title="สวน">
+					  <a href="layout2/garden.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/garden.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -303,9 +278,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/garden2.jpg"
-					  	data-lightbox="layout2"
-							data-title="สวน">
+					  <a href="layout2/garden2.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/garden2.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -315,9 +289,8 @@
 				  	</div>
 				  	<div class="ft col3 mb5">
 					  <center>
-					  <a href="layout2/entrance.jpg"
-					  	data-lightbox="layout2"
-							data-title="ทางเข้า">
+					  <a href="layout2/entrance.jpg" 
+					  	data-lightbox="layout2">
 					  	<img src="layout2/entrance.jpg" class="imgcol3">
 					  	</a>
 					  </center>
@@ -326,7 +299,7 @@
 					  </p>
 				  	</div>
 				</section>
-				<iframe style="width:60rem; height: 40rem; display: table;"
+				<iframe style="width:30rem; height: 22rem; display: table;"
 				class="mb5 middle center"
 				src="https://www.youtube.com/embed/16NEpQhJGxA" frameborder="0" allowfullscreen></iframe>
 			</section>
@@ -361,11 +334,11 @@
 						<p class="mb2">
 							Trendhome.co@gmail.com
 						</p>
-						<h2 class="mb1">
-							<a class="dark-gray link" href="tel:66-82-181-8862">082-181-8862</a>
+						<h2 class="mb2">
+							082-181-8862
 						</h2>
-						<h2 class="mb1">
-							<a class="dark-gray link" href="tel:66-88-251-8338">088-251-8338</a>
+						<h2 class="mb2">
+							088-251-8338
 						</h2>
 					</div>
 				</div>
@@ -392,7 +365,7 @@
          async defer>
          </script>
          <script>
-			/* When the user clicks on the button,
+			/* When the user clicks on the button, 
 			toggle between hiding and showing the dropdown content */
 			function menuFunction() {
 			    document.getElementById("myDropdown").classList.toggle("show");
